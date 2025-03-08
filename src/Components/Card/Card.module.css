@@ -1,0 +1,12 @@
+.cardDiv {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  gap: 50px;
+  width: 700px;
+}
+
+img {
+  border: solid, black, 8px;
+  height: 300px;
+}
