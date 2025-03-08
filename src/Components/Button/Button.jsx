@@ -1,5 +1,5 @@
 import './Button.module.css';
-export default function Button() {
+export default function Button(props) {
   return (
     <button
       style={{
@@ -14,7 +14,7 @@ export default function Button() {
         border: '0',
       }}
     >
-      Comprar agora
+      {props.text}
     </button>
   );
 }
