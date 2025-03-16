@@ -1,0 +1,33 @@
+.btn {
+  border: 0;
+  display: block;
+  width: 50%;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:nth-child(1) {
+  background-color: #1da1f2;
+} /* GitHub */
+.btn:nth-child(2) {
+  background-color: #1da1f2;
+} /* LinkedIn */
+.btn:nth-child(3) {
+  background-color: #1da1f2;
+} /* Twitter */
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn a {
+  color: white;
+  text-decoration: none;
+}

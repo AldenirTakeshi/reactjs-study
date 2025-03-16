@@ -5,6 +5,7 @@ import posterReturnJedi from './assets/Return of the Jedi.jpg';
 import Button from './Components/Button/Button.jsx';
 import tomiokaIcon from './assets/tomioka.jpg';
 import CardProfile from './Components/Profile/CardProfile.jsx';
+import styles from './App.module.css';
 
 function sum(a, b) {
   return a + b;
@@ -12,7 +13,7 @@ function sum(a, b) {
 
 export default function App() {
   return (
-    <>
+    <div className={styles.app}>
       {/* <h1>Opa Teste</h1>
       <Button text="Hello World" />
       <Card title="Poster: Star Wars (1977)" img={starwars1} />
@@ -25,21 +26,24 @@ export default function App() {
         phone={'69 9 92438399'}
         email={'aldenirtakeshi@gmail.com'}
         gitHubUrl={
-          <a href="" target="_Blank">
+          <a href="https://github.com/AldenirTakeshi" target="_Blank">
             GitHub
           </a>
         }
         linkedinUrl={
-          <a href="" target="_Blank">
+          <a
+            href="https://www.linkedin.com/in/aldenir-arminio-060a51300/"
+            target="_Blank"
+          >
             Linkedin
           </a>
         }
         twitterUrl={
-          <a href="" target="_Blank">
+          <a href="https://x.com/takeshiitos" target="_Blank">
             Twitter
           </a>
         }
       />
-    </>
+    </div>
   );
 }

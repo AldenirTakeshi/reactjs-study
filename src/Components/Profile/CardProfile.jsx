@@ -1,3 +1,6 @@
+import BtnCard from '../BtnCard/BtnCard';
+import ProfileSection from '../ProfileSection/ProfileSection';
+import TitleCard from '../TitleCard/TitleCard';
 import styles from './Profile.module.css';
 export default function CardProfile({
   avatar,
@@ -12,18 +15,14 @@ export default function CardProfile({
   return (
     <div className={styles.CardProfile}>
       <img src={avatar} alt="Img de perfil" />
-      <h1 className="Name">{name}</h1>
-      <hr />
-      <p>{bio}</p>
-      <hr />
-      <p>{phone}</p>
-      <hr />
-      <p>{email}</p>
-      <hr />
+      <TitleCard name={name} />
+      <ProfileSection info={bio} />
+      <ProfileSection info={phone} />
+      <ProfileSection info={email} />
       <div className={styles.divBtn}>
-        <button className={styles.btn}>{gitHubUrl}</button>
-        <button className={styles.btn}>{linkedinUrl}</button>
-        <button className={styles.btn}>{twitterUrl}</button>
+        <BtnCard Linkurl={gitHubUrl} />
+        <BtnCard Linkurl={linkedinUrl} />
+        <BtnCard Linkurl={twitterUrl} />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 .app {
-  background-color: #2c2c2d;
+  background-color: rgb(16, 108, 255);
   display: grid;
   min-height: 100vh;
   place-content: center;
